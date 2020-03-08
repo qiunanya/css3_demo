@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items属性 垂直对齐  单行元素时使用</title>
+    <style >
+        #content{
+            background-color:#fff;
+            width: 80vw;
+            height: 400px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: space-around;
+            /* align-items: flex-start;
+            align-items: flex-end; 
+            align-items: center;*/
+            align-items: stretch;/**子元素自适应父级高度或者宽度*/
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+            /* align-self:flex-end; *//*根据父元素调整单个元素位置*/
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+       <div class="box1">1</div>
+       <div class="box2">2</div>
+       <div class="box3">3</div>
+    </div>
+</body>
+</html>

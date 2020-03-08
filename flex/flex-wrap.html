@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-wrap属性 父级盒子装不下子元素，是否换行</title>
+    <style >
+        #content{
+            background-color:#fff;
+            width: 1000px;
+            height: 500px;
+            border: 1px solid red;
+            display: flex;
+            align-items: stretch;/**子元素自适应父级高度或者宽度，前提是子元素不给高度才有效*/
+            flex-wrap: wrap;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+            /* align-self:flex-end; *//*根据父元素调整单个元素位置*/
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+       <div class="box1">1</div>
+       <div class="box2">2</div>
+       <div class="box3">3</div>
+       <div class="box3">4</div>
+       <div class="box3">5</div>
+       <div class="box3">6</div>
+    </div>
+</body>
+</html>

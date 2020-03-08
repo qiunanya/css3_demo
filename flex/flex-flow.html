@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-flow 属性 排列方式 换不换行</title>
+    <style >
+        /* flex-flow 排列方式 换不换行 */
+        #content{
+            background-color:#fff;
+            width: 1000px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 100px auto;
+            display: flex;
+            flex-flow: row wrap;/*这句代码等同于flex-direction:row;flex-wrap:wrap*/
+        }
+        div{
+            width: 250px;
+            height: 200px;
+            
+        }
+        div:first-child{
+            background-color: rosybrown;
+        }
+        div:nth-child(2){
+            background-color: salmon;
+        }
+        div:nth-child(3){
+            background-color: skyblue;
+        }
+        div:nth-child(4){
+            background-color:royalblue;
+        }
+        div:nth-child(5){
+            background-color:red;
+        }
+        div:nth-child(6){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+       <div class="box1">1</div>
+       <div class="box2">2</div>
+       <div class="box3">3</div>
+       <div class="box3">4</div>
+       <div class="box3">5</div>
+       <div class="box3">6</div>
+    </div>
+</body>
+</html>

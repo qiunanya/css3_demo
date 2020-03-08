@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content属性 垂直对齐 多轴/多行时使用</title>
+    <style >
+        /* align-content属性 父元素必须写display:flex;flex-dicrtion:row,flex-wrap:wrap;三个属性才能有效 */
+        #content{
+            background-color:#fff;
+            width: 1000px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 100px auto;
+            display: flex;
+            flex-flow: row wrap; /* 这句话必须有，否则align-content属性无效果 */
+            align-content: space-around;
+        }
+        div{
+            width: 250px;
+            height: 200px;
+            
+        }
+        div:first-child{
+            background-color: rosybrown;
+        }
+        div:nth-child(2){
+            background-color: salmon;
+        }
+        div:nth-child(3){
+            background-color: skyblue;
+        }
+        div:nth-child(4){
+            background-color:royalblue;
+        }
+        div:nth-child(5){
+            background-color:red;
+        }
+        div:nth-child(6){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+       <div class="box1">1</div>
+       <div class="box2">2</div>
+       <div class="box3">3</div>
+       <div class="box3">4</div>
+       <div class="box3">5</div>
+       <div class="box3">6</div>
+    </div>
+</body>
+</html>

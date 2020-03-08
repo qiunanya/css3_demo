@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsut-content属性 水平对齐</title>
+    <style >
+        #content{
+            background-color:#fff;
+            width: 80vw;
+            height: 200px;
+            border: 1px solid red;
+            display: flex;
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-between; */
+            justify-content: space-around;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: rebeccapurple;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+       <div class="box1">1</div>
+       <div class="box2">2</div>
+       <div class="box3">3</div>
+    </div>
+</body>
+</html>
